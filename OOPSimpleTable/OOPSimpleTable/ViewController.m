@@ -29,24 +29,6 @@
     
     [self.view addSubview:myTableView];
     
-    
-    // init the array with a list of Recipe Names
-//    recipeNames
-//                  ", , , ,
-//                   @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini"];
-//    
-//    // init the array with a list of images
-//    recipeImages = , ", ,
-//                     , , ,
-//                     @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg",
-//                     @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg",
-//                     @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg",
-//                     @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg"];
-//    
-//    // init the array with a list of Prep Times
-//    recipePrepTimes = @[, ", ", , , , @"45 min", @"5 min", @"30 min", @"8 min", @"20 min", @"20 min", @"5 min", @"1.5 hour", @"4 hours", @"10 min"];
-//    
-//
     Recipes *recipe1 = [Recipes new];
     recipe1.name = @"Egg Benedict";
     recipe1.prepTime = @"30 mins";
@@ -79,57 +61,53 @@
     
     Recipes *recipe7 = [Recipes new];
     recipe7.name = @"White Chocolate Donut";
-    recipe7.prepTime = @"30";
-    recipe7.image = @"egg_benedict.jpg";
+    recipe7.prepTime = @"45 mins";
+    recipe7.image = @"white_chocolate_donut.jpg";
     
     Recipes *recipe8 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
+    recipe8.name = @"Starbucks Coffee";
+    recipe8.prepTime = @"5 mins";
+    recipe8.image = @"starbucks_coffee.jpg";
     
-    Recipes *recipe1 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
+    Recipes *recipe9 = [Recipes new];
+    recipe9.name = @"Vegetable Curry";
+    recipe9.prepTime = @"30 mins";
+    recipe9.image = @"vegetable_curry.jpg";
     
-    Recipes *recipe1 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
+    Recipes *recipe10 = [Recipes new];
+    recipe10.name = @"Instant Noodle with Egg";
+    recipe10.prepTime = @"8 mins";
+    recipe10.image = @"instant_noodle_with_egg.jpg";
     
-    Recipes *recipe1 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
+    Recipes *recipe11 = [Recipes new];
+    recipe11.name = @"Noodle with BBQ Pork";
+    recipe11.prepTime = @"20 mins";
+    recipe11.image = @"noodle_with_bbq_pork.jpg";
     
-    Recipes *recipe1 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
+    Recipes *recipe12 = [Recipes new];
+    recipe12.name = @"Japanese Noodle with Pork";
+    recipe12.prepTime = @"20 min";
+    recipe12.image = @"japanese_noodle_with_pork.jpg";
     
-    Recipes *recipe1 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
+    Recipes *recipe13 = [Recipes new];
+    recipe13.name = @"Green Tea";
+    recipe13.prepTime = @"5 min";
+    recipe13.image = @"green_tea.jpg";
     
-    Recipes *recipe1 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
+    Recipes *recipe14 = [Recipes new];
+    recipe14.name = @"Thai Shrimp Cake";
+    recipe14.prepTime = @"1.5 hours";
+    recipe14.image = @"thai_shrimp_cake.jpg";
     
-    Recipes *recipe1 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
+    Recipes *recipe15 = [Recipes new];
+    recipe15.name = @"Angry Birds Cake";
+    recipe15.prepTime = @"4 hours";
+    recipe15.image =  @"angry_birds_cake.jpg";
     
-    Recipes *recipe1 = [Recipes new];
-    recipe1.name = @"Egg Benedict";
-    recipe1.prepTime = @"30";
-    recipe1.image = @"egg_benedict.jpg";
-    
-    
-    
-    
+    Recipes *recipe16 = [Recipes new];
+    recipe16.name = @"Ham and Cheese Panini";
+    recipe16.prepTime = @"10 mins";
+    recipe16.image = @"ham_and_cheese_panini.jpg";
     
     
     
