@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // retrieve the current window and set the bounds
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    TableViewController *myTVC = [[TableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:myTVC];
+    self.window.rootViewController = navC;
+    
+    // hide the nav bar
+    navC.navigationBarHidden = YES;
+    
+    // make the reciever the key window and visible
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
