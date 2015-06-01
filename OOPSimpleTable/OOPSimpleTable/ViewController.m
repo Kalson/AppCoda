@@ -14,6 +14,9 @@
 @end
 
 @implementation ViewController
+{
+    NSArray *recipes;
+}
 
 
 - (void)viewDidLoad {
@@ -28,6 +31,8 @@
     myTableView.dataSource = self;
     
     [self.view addSubview:myTableView];
+    
+    // create recipe objects from the properties provided in the model
     
     Recipes *recipe1 = [Recipes new];
     recipe1.name = @"Egg Benedict";
@@ -110,12 +115,16 @@
     recipe16.image = @"ham_and_cheese_panini.jpg";
     
     
+    // create an array to store the recipe objects in
+    recipes = @[recipe1,recipe2,recipe3,recipe4,recipe5,recipe6,recipe7,recipe8,recipe9,recipe10,recipe11,recipe12,recipe13,recipe14,recipe15,recipe16];
+    
+    
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    return recipes.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -130,6 +139,8 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    
+
     
     return cell;
 }
