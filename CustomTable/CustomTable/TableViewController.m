@@ -48,6 +48,7 @@
     recipeImages = [myDic objectForKey:@"Image"];
     recipePrepTimes = [myDic objectForKey:@"PrepTime"];
     
+    
     // set the row height to 71
     self.tableView.rowHeight = 71;
 }
