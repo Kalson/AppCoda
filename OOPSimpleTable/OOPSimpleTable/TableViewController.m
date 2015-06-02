@@ -16,7 +16,7 @@
 
 @implementation TableViewController
 {
-    NSArray *recipes;
+    NSMutableArray *recipes;
 }
 
 - (void)viewDidLoad {
@@ -111,7 +111,7 @@
     recipe16.image = @"ham_and_cheese_panini.jpg";
     
     // create an array to store the recipe objects in
-    recipes = @[recipe1,recipe2,recipe3,recipe4,recipe5,recipe6,recipe7,recipe8,recipe9,recipe10,recipe11,recipe12,recipe13,recipe14,recipe15,recipe16];
+    recipes = [@[recipe1,recipe2,recipe3,recipe4,recipe5,recipe6,recipe7,recipe8,recipe9,recipe10,recipe11,recipe12,recipe13,recipe14,recipe15,recipe16]mutableCopy];
     
     self.tableView.rowHeight = 71;
 }
@@ -168,17 +168,15 @@
 }
 */
 
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
+  
+    [recipes removeObjectAtIndex:indexPath.row];
+    
+//  or  [tableView reloadData];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    
 }
-*/
 
 /*
 // Override to support rearranging the table view.

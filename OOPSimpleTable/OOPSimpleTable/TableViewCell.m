@@ -37,9 +37,7 @@
         
         self.recipeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 50, 50)];
         [self.contentView addSubview:self.recipeImageView];
-        
-        NSLog(@"%@",self.recipeNameLabel);
-        
+                
     }
     
     return self;
