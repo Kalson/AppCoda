@@ -13,6 +13,7 @@
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *prepTime;
 @property (nonatomic) NSString *image;
+@property (nonatomic) NSArray *ingredients;
 
 
 @end

@@ -64,6 +64,8 @@
 		26389C861B1DA5B0007125A3 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26389C551B1DA5B0007125A3 /* white_chocolate_donut.jpg */; };
 		26389C871B1DA5B0007125A3 /* white_chocolate_donut@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26389C561B1DA5B0007125A3 /* white_chocolate_donut@2x.jpg */; };
 		26389C881B1DA5B0007125A3 /* white_chocolate_donut@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26389C571B1DA5B0007125A3 /* white_chocolate_donut@3x.jpg */; };
+		26389C8B1B1E3C44007125A3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26389C8A1B1E3C44007125A3 /* TableViewCell.m */; };
+		266193801B1E54B1004C3D82 /* RecipeDetailedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2661937F1B1E54B1004C3D82 /* RecipeDetailedVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,10 @@
 		26389C551B1DA5B0007125A3 /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
 		26389C561B1DA5B0007125A3 /* white_chocolate_donut@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "white_chocolate_donut@2x.jpg"; sourceTree = "<group>"; };
 		26389C571B1DA5B0007125A3 /* white_chocolate_donut@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "white_chocolate_donut@3x.jpg"; sourceTree = "<group>"; };
+		26389C891B1E3C44007125A3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		26389C8A1B1E3C44007125A3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		2661937E1B1E54B1004C3D82 /* RecipeDetailedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailedVC.h; sourceTree = "<group>"; };
+		2661937F1B1E54B1004C3D82 /* RecipeDetailedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailedVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +170,6 @@
 		26389BED1B1DA1B7007125A3 = {
 			isa = PBXGroup;
 			children = (
-				26389C251B1DA3F7007125A3 /* Model */,
 				26389BF81B1DA1B7007125A3 /* OOPCustomTable */,
 				26389C121B1DA1B8007125A3 /* OOPCustomTableTests */,
 				26389BF71B1DA1B7007125A3 /* Products */,
@@ -185,8 +190,9 @@
 			children = (
 				26389BFD1B1DA1B7007125A3 /* AppDelegate.h */,
 				26389BFE1B1DA1B7007125A3 /* AppDelegate.m */,
-				26389C1F1B1DA2E6007125A3 /* TableViewController.h */,
-				26389C201B1DA2E6007125A3 /* TableViewController.m */,
+				26389C251B1DA3F7007125A3 /* Model */,
+				266193811B1E572E004C3D82 /* View */,
+				266193821B1E5737004C3D82 /* Controller */,
 				26389C031B1DA1B7007125A3 /* Main.storyboard */,
 				26389C061B1DA1B7007125A3 /* Images.xcassets */,
 				26389C261B1DA5B0007125A3 /* simpletable_image_pack */,
@@ -229,7 +235,6 @@
 				26389C231B1DA3EE007125A3 /* Recipes.m */,
 			);
 			name = Model;
-			path = OOPCustomTable;
 			sourceTree = "<group>";
 		};
 		26389C261B1DA5B0007125A3 /* simpletable_image_pack */ = {
@@ -286,6 +291,26 @@
 				26389C571B1DA5B0007125A3 /* white_chocolate_donut@3x.jpg */,
 			);
 			path = simpletable_image_pack;
+			sourceTree = "<group>";
+		};
+		266193811B1E572E004C3D82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26389C891B1E3C44007125A3 /* TableViewCell.h */,
+				26389C8A1B1E3C44007125A3 /* TableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		266193821B1E5737004C3D82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26389C1F1B1DA2E6007125A3 /* TableViewController.h */,
+				26389C201B1DA2E6007125A3 /* TableViewController.m */,
+				2661937E1B1E54B1004C3D82 /* RecipeDetailedVC.h */,
+				2661937F1B1E54B1004C3D82 /* RecipeDetailedVC.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,7 +464,9 @@
 			files = (
 				26389BFF1B1DA1B7007125A3 /* AppDelegate.m in Sources */,
 				26389C211B1DA2E6007125A3 /* TableViewController.m in Sources */,
+				266193801B1E54B1004C3D82 /* RecipeDetailedVC.m in Sources */,
 				26389BFC1B1DA1B7007125A3 /* main.m in Sources */,
+				26389C8B1B1E3C44007125A3 /* TableViewCell.m in Sources */,
 				26389C241B1DA3EE007125A3 /* Recipes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,6 +664,7 @@
 				26389C1B1B1DA1B8007125A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26389C1C1B1DA1B8007125A3 /* Build configuration list for PBXNativeTarget "OOPCustomTableTests" */ = {
 			isa = XCConfigurationList;
@@ -645,6 +673,7 @@
 				26389C1E1B1DA1B8007125A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
