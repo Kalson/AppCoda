@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TableViewController.h"
+#import "AboutVC.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +23,22 @@
     // set the current window to tehe bounds of the screen
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
+    // the view controllers
     TableViewController *myTVC = [[TableViewController alloc] initWithStyle:UITableViewStylePlain];
+    AboutVC *aboutVC = [[AboutVC alloc] init];
+    
+    // init the nav controllers with the view controllers
     UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:myTVC];
-    self.window.rootViewController = navC;
+    UINavigationController *navC2 = [[UINavigationController alloc] initWithRootViewController:aboutVC];
+    
+    // set the tab bar items
+    navC.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0];
+    navC2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMore tag:1];
+    
+    // create tab bar controller
+    UITabBarController *tabBarC = [[UITabBarController alloc] init];
+    tabBarC.viewControllers = @[navC,navC2];
+    self.window.rootViewController = tabBarC;
     
     // make the receiver the key window and make it visible
     [self.window makeKeyAndVisible];

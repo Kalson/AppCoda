@@ -1,5 +1,5 @@
 //
-//  RecipeDetailedVC.h
+//  AboutVC.h
 //  OOPCustomTable
 //
 //  Created by KaL on 6/2/15.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Recipes.h"
 
-@interface RecipeDetailedVC : UIViewController
-
-@property (nonatomic) Recipes *recipe;
+@interface AboutVC : UIViewController
 
 @end

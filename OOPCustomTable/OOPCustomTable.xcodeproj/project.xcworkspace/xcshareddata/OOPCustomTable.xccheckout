@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5C2FF168-D9A1-40C6-8D6B-877E86168D14</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>OOPCustomTable</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E09D2F8E553F0EE2D9FE4D269D501C6E07BE8490</key>
 		<string>https://github.com/Kalson/AppCoda.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OOPCustomTable/OOPCustomTable.xcodeproj/project.xcworkspace</string>
+	<string>OOPCustomTable/OOPCustomTable.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E09D2F8E553F0EE2D9FE4D269D501C6E07BE8490</key>

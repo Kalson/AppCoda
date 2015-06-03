@@ -181,14 +181,9 @@
    // retrieve the recipe detail vc
     RecipeDetailedVC *recipeDetailedVC = [RecipeDetailedVC new];
     
-    // create a recipe object and set to the indexes of the recipe array
-    Recipes *selectedRecipe = recipes[indexPath.row];
-    
-    recipeDetailedVC.recipeName = selectedRecipe.name;
+    recipeDetailedVC.recipe = recipes[indexPath.row];
     
     [self.navigationController pushViewController:recipeDetailedVC animated:YES];
-
-    
 }
 
 // Override to support editing the table view.

@@ -66,6 +66,9 @@
 		26389C881B1DA5B0007125A3 /* white_chocolate_donut@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26389C571B1DA5B0007125A3 /* white_chocolate_donut@3x.jpg */; };
 		26389C8B1B1E3C44007125A3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26389C8A1B1E3C44007125A3 /* TableViewCell.m */; };
 		266193801B1E54B1004C3D82 /* RecipeDetailedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2661937F1B1E54B1004C3D82 /* RecipeDetailedVC.m */; };
+		266193851B1E95E0004C3D82 /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 266193841B1E95E0004C3D82 /* AboutVC.m */; };
+		266193881B1E9892004C3D82 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 266193861B1E9892004C3D82 /* about.jpg */; };
+		266193891B1E9892004C3D82 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 266193871B1E9892004C3D82 /* about.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +150,10 @@
 		26389C8A1B1E3C44007125A3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		2661937E1B1E54B1004C3D82 /* RecipeDetailedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailedVC.h; sourceTree = "<group>"; };
 		2661937F1B1E54B1004C3D82 /* RecipeDetailedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailedVC.m; sourceTree = "<group>"; };
+		266193831B1E95E0004C3D82 /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		266193841B1E95E0004C3D82 /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		266193861B1E9892004C3D82 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
+		266193871B1E9892004C3D82 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +212,8 @@
 		26389BF91B1DA1B7007125A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				266193861B1E9892004C3D82 /* about.jpg */,
+				266193871B1E9892004C3D82 /* about.html */,
 				26389BFA1B1DA1B7007125A3 /* Info.plist */,
 				26389BFB1B1DA1B7007125A3 /* main.m */,
 			);
@@ -309,6 +318,8 @@
 				26389C201B1DA2E6007125A3 /* TableViewController.m */,
 				2661937E1B1E54B1004C3D82 /* RecipeDetailedVC.h */,
 				2661937F1B1E54B1004C3D82 /* RecipeDetailedVC.m */,
+				266193831B1E95E0004C3D82 /* AboutVC.h */,
+				266193841B1E95E0004C3D82 /* AboutVC.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -435,12 +446,14 @@
 				26389C6B1B1DA5B0007125A3 /* ham_and_egg_sandwich@2x.jpg in Resources */,
 				26389C5C1B1DA5B0007125A3 /* creme_brelee@2x.jpg in Resources */,
 				26389C661B1DA5B0007125A3 /* green_tea@3x.jpg in Resources */,
+				266193891B1E9892004C3D82 /* about.html in Resources */,
 				26389C631B1DA5B0007125A3 /* full_breakfast@3x.jpg in Resources */,
 				26389C811B1DA5B0007125A3 /* thai_shrimp_cake@2x.jpg in Resources */,
 				26389C771B1DA5B0007125A3 /* mushroom_risotto@2x.jpg in Resources */,
 				26389C801B1DA5B0007125A3 /* thai_shrimp_cake.jpg in Resources */,
 				26389C691B1DA5B0007125A3 /* ham_and_cheese_panini@3x.jpg in Resources */,
 				26389C071B1DA1B7007125A3 /* Images.xcassets in Resources */,
+				266193881B1E9892004C3D82 /* about.jpg in Resources */,
 				26389C7C1B1DA5B0007125A3 /* simpletable_image_pack.zip in Resources */,
 				26389C621B1DA5B0007125A3 /* full_breakfast@2x.jpg in Resources */,
 				26389C751B1DA5B0007125A3 /* japanese_noodle_with_pork@3x.jpg in Resources */,
@@ -467,6 +480,7 @@
 				266193801B1E54B1004C3D82 /* RecipeDetailedVC.m in Sources */,
 				26389BFC1B1DA1B7007125A3 /* main.m in Sources */,
 				26389C8B1B1E3C44007125A3 /* TableViewCell.m in Sources */,
+				266193851B1E95E0004C3D82 /* AboutVC.m in Sources */,
 				26389C241B1DA3EE007125A3 /* Recipes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
