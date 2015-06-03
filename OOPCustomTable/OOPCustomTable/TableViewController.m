@@ -14,7 +14,7 @@
 #import "TableViewController.h"
 #import "RecipeDetailedVC.h"
 
-@interface TableViewController () <UISearchResultsUpdating>
+@interface TableViewController ()
 
 @end
 
@@ -137,7 +137,7 @@
     
     // create search controller
     searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    [searchController.searchBar sizeToFit];
+    [searchController.searchBar sizeToFit]; // makes the search bar visible
     self.tableView.tableHeaderView = searchController.searchBar;
     self.definesPresentationContext = YES;
 }
@@ -146,10 +146,6 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
-{
-    
-}
 
 #pragma mark - Table view data source
 
