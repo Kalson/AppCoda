@@ -14,7 +14,7 @@
 #import "TableViewController.h"
 #import "RecipeDetailedVC.h"
 
-@interface TableViewController ()
+@interface TableViewController () <UISearchResultsUpdating>
 
 @end
 
@@ -22,6 +22,8 @@
 {
     NSMutableArray *recipes;
     Recipes *recipe;
+    
+    UISearchController *searchController;
 }
 
 - (void)viewDidLoad {
@@ -132,10 +134,21 @@
     recipes = [@[recipe1,recipe2,recipe3,recipe4,recipe5,recipe6,recipe7,recipe8,recipe9,recipe10,recipe11,recipe12,recipe13,recipe14,recipe15,recipe16]mutableCopy];
     
     self.tableView.rowHeight = 71;
+    
+    // create search controller
+    searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    [searchController.searchBar sizeToFit];
+    self.tableView.tableHeaderView = searchController.searchBar;
+    self.definesPresentationContext = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
+{
+    
 }
 
 #pragma mark - Table view data source
