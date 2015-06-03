@@ -28,7 +28,6 @@
     UIImageView *photoFrame = [[UIImageView alloc] initWithFrame:CGRectMake(10, 75, SCREEN_WIDTH - 20, (SCREEN_HEIGHT/2) - 80)];
     photoFrame.image = [UIImage imageNamed:@"photo-frame"];
     [self.view addSubview:photoFrame];
-    
     int photoFrameHeight = photoFrame.frame.size.height;
     
     UIImageView *myImageView = [[UIImageView alloc] initWithFrame:CGRectMake(photoFrame.bounds.size.width * .03,
@@ -59,7 +58,7 @@
     [self.view addSubview:prepTimeLabel];
 
         UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 75 + photoFrameHeight + 30 + 15, SCREEN_WIDTH - 30, SCREEN_HEIGHT - (75 + photoFrameHeight + 30 + 15) - 60)];
-    textView.font = [UIFont systemFontOfSize:20];
+    textView.font = [UIFont systemFontOfSize:16];
     [self.view addSubview:textView];
     
     
