@@ -141,6 +141,7 @@
     [mySearchController.searchBar sizeToFit]; // makes the search bar visible
     self.tableView.tableHeaderView = mySearchController.searchBar;
     self.definesPresentationContext = YES;
+    mySearchController.dimsBackgroundDuringPresentation = NO;
     mySearchController.searchResultsUpdater = self; // make the current instance responsible for updating the search results
 }
 
@@ -188,8 +189,13 @@
         cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdenifier];
     }
     
-    // create a Recipe object and set to the index of the array
-    recipe = recipes[indexPath.row];
+    if (mySearchController.isActive) {
+        recipe = searchResults[indexPath.row]; // create a Recipe object and set to the index of the search results array, if the search controller is active
+
+    } else {
+        // create a Recipe object and set to the index of the recipe array
+        recipe = recipes[indexPath.row];
+    }
     
     // display the cell info
     cell.recipeNameLabel.text = recipe.name;
@@ -207,8 +213,14 @@
     
    // retrieve the recipe detail vc
     RecipeDetailedVC *recipeDetailedVC = [RecipeDetailedVC new];
+    recipeDetailedVC.recipe = recipes[indexPath.row]; // set the detail vc recipe property
     
-    recipeDetailedVC.recipe = recipes[indexPath.row];
+    if (mySearchController.isActive) {
+        recipeDetailedVC.recipe = searchResults[indexPath.row];
+        
+    } else {
+        recipe = recipes[indexPath.row];
+    }
     
     [self.navigationController pushViewController:recipeDetailedVC animated:YES];
 }
