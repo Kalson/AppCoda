@@ -14,7 +14,7 @@
 #import "TableViewController.h"
 #import "RecipeDetailedVC.h"
 
-@interface TableViewController ()
+@interface TableViewController () <UISearchResultsUpdating>
 
 @end
 
@@ -23,7 +23,8 @@
     NSMutableArray *recipes;
     Recipes *recipe;
     
-    UISearchController *searchController;
+    UISearchController *mySearchController;
+    NSArray *searchResults;
 }
 
 - (void)viewDidLoad {
@@ -136,16 +137,29 @@
     self.tableView.rowHeight = 71;
     
     // create search controller
-    searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    [searchController.searchBar sizeToFit]; // makes the search bar visible
-    self.tableView.tableHeaderView = searchController.searchBar;
+    mySearchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    [mySearchController.searchBar sizeToFit]; // makes the search bar visible
+    self.tableView.tableHeaderView = mySearchController.searchBar;
     self.definesPresentationContext = YES;
+    mySearchController.searchResultsUpdater = self; // make the current instance responsible for updating the search results
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
+- (void)filterContentForSearch:(NSString *)searchText
+{
+    // create an NSpredicate
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name contains [c] %@",searchText];
+    searchResults = [recipes filteredArrayUsingPredicate:predicate]; // filter array using predicate
+}
+
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController
+{
+    [self filterContentForSearch:searchController.searchBar.text];
+    [self.tableView reloadData];
+}
 
 #pragma mark - Table view data source
 
@@ -156,7 +170,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return recipes.count;
+    if (mySearchController.isActive) { // if search controller is active, return search results
+        return searchResults.count;
+    } else {
+        return recipes.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
