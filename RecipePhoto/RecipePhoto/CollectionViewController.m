@@ -14,5 +14,19 @@
 
 @implementation CollectionViewController
 
+- (instancetype)init
+{
+    
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    return (self = [super initWithCollectionViewLayout:layout]);
+    
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.collectionView.backgroundColor = [UIColor whiteColor];
+}
 
 @end
