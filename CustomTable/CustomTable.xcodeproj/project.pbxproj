@@ -248,10 +248,10 @@
 			children = (
 				26D0164A1B111FB10057590C /* AppDelegate.h */,
 				26D0164B1B111FB10057590C /* AppDelegate.m */,
-				26D0166C1B111FD50057590C /* TableViewController.h */,
-				26D0166D1B111FD50057590C /* TableViewController.m */,
 				26D724271B14EAC2001F2BBB /* CustomTableViewCell.h */,
 				26D724281B14EAC2001F2BBB /* CustomTableViewCell.m */,
+				26D0166C1B111FD50057590C /* TableViewController.h */,
+				26D0166D1B111FD50057590C /* TableViewController.m */,
 				26E7BC8A1B1A318400B88DF0 /* RecipesVC.h */,
 				26E7BC8B1B1A318400B88DF0 /* RecipesVC.m */,
 				26E7BC901B1A6BBA00B88DF0 /* AboutVC.h */,

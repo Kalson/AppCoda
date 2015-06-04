@@ -54,7 +54,7 @@
     prepTimeLabel.textAlignment = NSTextAlignmentCenter;
     prepTimeLabel.layer.cornerRadius = 2;
     prepTimeLabel.layer.masksToBounds = YES;
-    prepTimeLabel.text = @"PrepTime";
+    prepTimeLabel.text = self.recipe.prepTime;
     [self.view addSubview:prepTimeLabel];
 
         UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 75 + photoFrameHeight + 30 + 15, SCREEN_WIDTH - 30, SCREEN_HEIGHT - (75 + photoFrameHeight + 30 + 15) - 60)];
