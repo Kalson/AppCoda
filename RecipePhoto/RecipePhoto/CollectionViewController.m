@@ -8,6 +8,8 @@
 
 #import "CollectionViewController.h"
 
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
 @interface CollectionViewController () <UICollectionViewDelegateFlowLayout>
 
 @end
@@ -34,7 +36,14 @@
 // layout itemsize
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(106, 106);
+    if (SCREEN_WIDTH == 320){ // for iPhone 4/4s & 5/5S
+        return CGSizeMake(106, 106);
+
+    } else if (SCREEN_WIDTH <= 375) { // for iPhone 6
+        return CGSizeMake(124, 124);
+    } else {
+        return CGSizeMake(137, 137); // for iPhone 6 plus
+    }
 }
 
 // layout line spacing
