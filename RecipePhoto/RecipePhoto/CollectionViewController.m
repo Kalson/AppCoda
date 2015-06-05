@@ -7,6 +7,7 @@
 //
 
 #import "CollectionViewController.h"
+#import "CollectionViewCell.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
@@ -16,6 +17,7 @@
 
 @implementation CollectionViewController
 {
+    NSArray *recipeImages;
 }
 
 - (instancetype)init
@@ -30,7 +32,15 @@
     [super viewDidLoad];
     
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
+    [self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
+    
+    recipeImages = @[@"angry_birds_cake.jpg", @"creme_brelee.jpg", @"egg_benedict.jpg",
+    @"full_breakfast.jpg", @"green_tea.jpg", @"ham_and_cheese_panini.jpg",
+    @"ham_and_egg_sandwich.jpg", @"hamburger.jpg", @"instant_noodle_with_egg.jpg",
+    @"japanese_noodle_with_pork.jpg", @"mushroom_risotto.jpg", @"noodle_with_bbq_pork.jpg",
+    @"starbucks_coffee.jpg", @"thai_shrimp_cake.jpg", @"vegetable_curry.jpg",
+    @"white_chocolate_donut.jpg"];
+    
 }
 
 // layout itemsize
@@ -62,13 +72,14 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return recipeImages.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.recipeImageView.image = [UIImage imageNamed:recipeImages[indexPath.row]]; // set the cell imageView with the recipe image array
     cell.backgroundColor = [UIColor lightGrayColor];
     
     return cell;
