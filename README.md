@@ -1,2 +1,2 @@
 # AppCoda 
-AppCoda done Progamatically
+AppCoda is done in Storyboard, so I decided to do it progamatically
