@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2651AFD61B20FA08001D6CF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2651AFD51B20FA08001D6CF0 /* main.m */; };
 		2651AFD91B20FA08001D6CF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2651AFD81B20FA08001D6CF0 /* AppDelegate.m */; };
-		2651AFDF1B20FA08001D6CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2651AFDD1B20FA08001D6CF0 /* Main.storyboard */; };
 		2651AFE11B20FA08001D6CF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2651AFE01B20FA08001D6CF0 /* Images.xcassets */; };
 		2651AFE41B20FA08001D6CF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2651AFE21B20FA08001D6CF0 /* LaunchScreen.xib */; };
 		2651AFF01B20FA08001D6CF0 /* RecipePhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2651AFEF1B20FA08001D6CF0 /* RecipePhotoTests.m */; };
@@ -50,7 +49,6 @@
 		2651AFD51B20FA08001D6CF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2651AFD71B20FA08001D6CF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2651AFD81B20FA08001D6CF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2651AFDE1B20FA08001D6CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2651AFE01B20FA08001D6CF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2651AFE31B20FA08001D6CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2651AFE91B20FA08001D6CF0 /* RecipePhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipePhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,14 +118,11 @@
 			children = (
 				2651AFD71B20FA08001D6CF0 /* AppDelegate.h */,
 				2651AFD81B20FA08001D6CF0 /* AppDelegate.m */,
-				2651AFF91B20FF21001D6CF0 /* CollectionViewController.h */,
-				2651AFFA1B20FF22001D6CF0 /* CollectionViewController.m */,
 				2651AFFC1B224C8B001D6CF0 /* CollectionViewCell.h */,
 				2651AFFD1B224C8B001D6CF0 /* CollectionViewCell.m */,
-				2651AFDD1B20FA08001D6CF0 /* Main.storyboard */,
-				2651AFE01B20FA08001D6CF0 /* Images.xcassets */,
+				2651AFF91B20FF21001D6CF0 /* CollectionViewController.h */,
+				2651AFFA1B20FF22001D6CF0 /* CollectionViewController.m */,
 				2651AFFF1B224CE7001D6CF0 /* RecipePhotoImagePack */,
-				2651AFE21B20FA08001D6CF0 /* LaunchScreen.xib */,
 				2651AFD31B20FA08001D6CF0 /* Supporting Files */,
 			);
 			path = RecipePhoto;
@@ -136,6 +131,8 @@
 		2651AFD31B20FA08001D6CF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2651AFE01B20FA08001D6CF0 /* Images.xcassets */,
+				2651AFE21B20FA08001D6CF0 /* LaunchScreen.xib */,
 				2651AFD41B20FA08001D6CF0 /* Info.plist */,
 				2651AFD51B20FA08001D6CF0 /* main.m */,
 			);
@@ -264,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2651B0141B224CE7001D6CF0 /* full_breakfast.jpg in Resources */,
-				2651AFDF1B20FA08001D6CF0 /* Main.storyboard in Resources */,
 				2651B0121B224CE7001D6CF0 /* creme_brelee.jpg in Resources */,
 				2651B0211B224CE7001D6CF0 /* white_chocolate_donut.jpg in Resources */,
 				2651AFE41B20FA08001D6CF0 /* LaunchScreen.xib in Resources */,
@@ -326,14 +322,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2651AFDD1B20FA08001D6CF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2651AFDE1B20FA08001D6CF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2651AFE21B20FA08001D6CF0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

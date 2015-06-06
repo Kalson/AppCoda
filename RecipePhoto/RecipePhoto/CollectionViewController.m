@@ -31,15 +31,15 @@
 {
     [super viewDidLoad];
     
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor blackColor];
     [self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
     
     recipeImages = @[@"angry_birds_cake.jpg", @"creme_brelee.jpg", @"egg_benedict.jpg",
-    @"full_breakfast.jpg", @"green_tea.jpg", @"ham_and_cheese_panini.jpg",
-    @"ham_and_egg_sandwich.jpg", @"hamburger.jpg", @"instant_noodle_with_egg.jpg",
-    @"japanese_noodle_with_pork.jpg", @"mushroom_risotto.jpg", @"noodle_with_bbq_pork.jpg",
-    @"starbucks_coffee.jpg", @"thai_shrimp_cake.jpg", @"vegetable_curry.jpg",
-    @"white_chocolate_donut.jpg"];
+                     @"full_breakfast.jpg", @"green_tea.jpg", @"ham_and_cheese_panini.jpg",
+                     @"ham_and_egg_sandwich.jpg", @"hamburger.jpg", @"instant_noodle_with_egg.jpg",
+                     @"japanese_noodle_with_pork.jpg", @"mushroom_risotto.jpg", @"noodle_with_bbq_pork.jpg",
+                     @"starbucks_coffee.jpg", @"thai_shrimp_cake.jpg", @"vegetable_curry.jpg",
+                     @"white_chocolate_donut.jpg"];
     
 }
 
@@ -47,8 +47,8 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (SCREEN_WIDTH == 320){ // for iPhone 4/4s & 5/5S
-        return CGSizeMake(106, 106);
-
+        return CGSizeMake(100, 100);
+        
     } else if (SCREEN_WIDTH <= 375) { // for iPhone 6
         return CGSizeMake(124, 124);
     } else {
@@ -59,13 +59,13 @@
 // layout line spacing
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 1;
+    return 10;
 }
 
 // layout minimumInteritemSpacing
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 1;
+    return 10;
 }
 
 
@@ -80,7 +80,9 @@
     
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     cell.recipeImageView.image = [UIImage imageNamed:recipeImages[indexPath.row]]; // set the cell imageView with the recipe image array
-    cell.backgroundColor = [UIColor lightGrayColor];
+
+    cell.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"photo-frame"]];
+//    cell.backgroundColor = [UIColor lightGrayColor];
     
     return cell;
 }
