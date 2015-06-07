@@ -30,6 +30,7 @@
     self.navigationItem.leftBarButtonItem = sideBarButton;
     
     if (revealVC) {
+        // lets you slide the main/content view to the left
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
     
