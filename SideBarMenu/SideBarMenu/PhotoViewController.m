@@ -1,26 +1,25 @@
 //
-//  MainViewController.m
+//  PhotoViewController.m
 //  SideBarMenu
 //
 //  Created by KaL on 6/7/15.
 //  Copyright (c) 2015 KaL. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "PhotoViewController.h"
 #import "SWRevealViewController.h"
 
-@interface MainViewController ()
+@interface PhotoViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation PhotoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor greenColor];
     
     // retrive the reveal View Controller
     SWRevealViewController *revealVC = self.revealViewController;
@@ -33,8 +32,6 @@
         // lets you slide the main/content view to the left/right
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

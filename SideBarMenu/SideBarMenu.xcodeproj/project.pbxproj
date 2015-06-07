@@ -16,6 +16,8 @@
 		26CBAFF51B2501D6006D5D3B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CBAFF41B2501D6006D5D3B /* SWRevealViewController.m */; };
 		26CBAFF91B25051A006D5D3B /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CBAFF81B25051A006D5D3B /* MenuViewController.m */; };
 		26CBAFFC1B2505FA006D5D3B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CBAFFB1B2505FA006D5D3B /* MainViewController.m */; };
+		26FFE2A51B251011001789C6 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FFE2A41B251011001789C6 /* PhotoViewController.m */; };
+		26FFE2A81B25101E001789C6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FFE2A71B25101E001789C6 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		26CBAFF81B25051A006D5D3B /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		26CBAFFA1B2505FA006D5D3B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		26CBAFFB1B2505FA006D5D3B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		26FFE2A31B251011001789C6 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		26FFE2A41B251011001789C6 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		26FFE2A61B25101E001789C6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		26FFE2A71B25101E001789C6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +77,9 @@
 			children = (
 				26CBAFCC1B2501C8006D5D3B /* SideBarMenu */,
 				26CBAFF61B250201006D5D3B /* SWRevealViewController */,
-				26CBAFFD1B250B6E006D5D3B /* MainViewController (Front View) */,
+				26CBAFFD1B250B6E006D5D3B /* MainViewControllers (Front View) */,
 				26CBAFFE1B250B8A006D5D3B /* MenuViewController (Rear View) */,
+				26CBAFCD1B2501C8006D5D3B /* Supporting Files */,
 				26CBAFE61B2501C8006D5D3B /* SideBarMenuTests */,
 				26CBAFCB1B2501C8006D5D3B /* Products */,
 			);
@@ -92,10 +99,6 @@
 			children = (
 				26CBAFD11B2501C8006D5D3B /* AppDelegate.h */,
 				26CBAFD21B2501C8006D5D3B /* AppDelegate.m */,
-				26CBAFD71B2501C8006D5D3B /* Main.storyboard */,
-				26CBAFDA1B2501C8006D5D3B /* Images.xcassets */,
-				26CBAFDC1B2501C8006D5D3B /* LaunchScreen.xib */,
-				26CBAFCD1B2501C8006D5D3B /* Supporting Files */,
 			);
 			path = SideBarMenu;
 			sourceTree = "<group>";
@@ -105,8 +108,12 @@
 			children = (
 				26CBAFCE1B2501C8006D5D3B /* Info.plist */,
 				26CBAFCF1B2501C8006D5D3B /* main.m */,
+				26CBAFD71B2501C8006D5D3B /* Main.storyboard */,
+				26CBAFDA1B2501C8006D5D3B /* Images.xcassets */,
+				26CBAFDC1B2501C8006D5D3B /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
+			path = SideBarMenu;
 			sourceTree = "<group>";
 		};
 		26CBAFE61B2501C8006D5D3B /* SideBarMenuTests */ = {
@@ -136,13 +143,17 @@
 			path = SideBarMenu;
 			sourceTree = "<group>";
 		};
-		26CBAFFD1B250B6E006D5D3B /* MainViewController (Front View) */ = {
+		26CBAFFD1B250B6E006D5D3B /* MainViewControllers (Front View) */ = {
 			isa = PBXGroup;
 			children = (
 				26CBAFFA1B2505FA006D5D3B /* MainViewController.h */,
 				26CBAFFB1B2505FA006D5D3B /* MainViewController.m */,
+				26FFE2A31B251011001789C6 /* PhotoViewController.h */,
+				26FFE2A41B251011001789C6 /* PhotoViewController.m */,
+				26FFE2A61B25101E001789C6 /* MapViewController.h */,
+				26FFE2A71B25101E001789C6 /* MapViewController.m */,
 			);
-			name = "MainViewController (Front View)";
+			name = "MainViewControllers (Front View)";
 			path = SideBarMenu;
 			sourceTree = "<group>";
 		};
@@ -259,8 +270,10 @@
 				26CBAFFC1B2505FA006D5D3B /* MainViewController.m in Sources */,
 				26CBAFD31B2501C8006D5D3B /* AppDelegate.m in Sources */,
 				26CBAFD01B2501C8006D5D3B /* main.m in Sources */,
+				26FFE2A51B251011001789C6 /* PhotoViewController.m in Sources */,
 				26CBAFF51B2501D6006D5D3B /* SWRevealViewController.m in Sources */,
 				26CBAFF91B25051A006D5D3B /* MenuViewController.m in Sources */,
+				26FFE2A81B25101E001789C6 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +470,7 @@
 				26CBAFEF1B2501C8006D5D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26CBAFF01B2501C8006D5D3B /* Build configuration list for PBXNativeTarget "SideBarMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +479,7 @@
 				26CBAFF21B2501C8006D5D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
