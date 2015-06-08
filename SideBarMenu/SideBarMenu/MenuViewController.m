@@ -105,7 +105,7 @@
         mainViewC = mapVC;
     }
     
-    else if (row == 6)
+    else 
     {
         mainViewC = photoVC;
 

@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 #import "SWRevealViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface MapViewController ()
 
@@ -19,13 +20,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor blueColor];
+    // create map View object
+    MKMapView *mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:mapView];
     
     // retrive the reveal View Controller
     SWRevealViewController *revealVC = self.revealViewController;
     
     // create the sidebar button
-    UIBarButtonItem *sideBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:revealVC action:@selector(revealToggle:)];
+    UIBarButtonItem *sideBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon"] style:UIBarButtonItemStyleDone target:revealVC action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = sideBarButton;
     
     if (revealVC) {

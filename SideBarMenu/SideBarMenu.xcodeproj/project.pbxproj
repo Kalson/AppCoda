@@ -25,6 +25,8 @@
 		26FFE2B51B25FDF2001789C6 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = 26FFE2AF1B25FDF2001789C6 /* comments.png */; };
 		26FFE2B71B25FDF2001789C6 /* ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = 26FFE2B11B25FDF2001789C6 /* ticket.png */; };
 		26FFE2B91B25FE60001789C6 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 26FFE2B81B25FE60001789C6 /* news.png */; };
+		26FFE2BC1B2634AF001789C6 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 26FFE2BA1B2634AF001789C6 /* reveal-icon.png */; };
+		26FFE2BD1B2634AF001789C6 /* reveal-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26FFE2BB1B2634AF001789C6 /* reveal-icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +61,15 @@
 		26FFE2A41B251011001789C6 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		26FFE2A61B25101E001789C6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		26FFE2A71B25101E001789C6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		26FFE2A91B251655001789C6 /* Treehouse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Treehouse@2x.png"; sourceTree = "<group>"; };
+		26FFE2A91B251655001789C6 /* Treehouse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Treehouse@2x.png"; path = "../SideBarMenu/Treehouse@2x.png"; sourceTree = "<group>"; };
 		26FFE2AC1B25FDF2001789C6 /* bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bag.png; sourceTree = "<group>"; };
 		26FFE2AD1B25FDF2001789C6 /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
 		26FFE2AE1B25FDF2001789C6 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		26FFE2AF1B25FDF2001789C6 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comments.png; sourceTree = "<group>"; };
 		26FFE2B11B25FDF2001789C6 /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket.png; sourceTree = "<group>"; };
 		26FFE2B81B25FE60001789C6 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		26FFE2BA1B2634AF001789C6 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
+		26FFE2BB1B2634AF001789C6 /* reveal-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +181,6 @@
 			children = (
 				26CBAFF71B25051A006D5D3B /* MenuViewController.h */,
 				26CBAFF81B25051A006D5D3B /* MenuViewController.m */,
-				26FFE2A91B251655001789C6 /* Treehouse@2x.png */,
 			);
 			name = "MenuViewController (Rear View)";
 			path = SideBarMenu;
@@ -186,12 +189,15 @@
 		26FFE2AB1B25FDF2001789C6 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				26FFE2A91B251655001789C6 /* Treehouse@2x.png */,
 				26FFE2AC1B25FDF2001789C6 /* bag.png */,
 				26FFE2AD1B25FDF2001789C6 /* book.png */,
 				26FFE2AE1B25FDF2001789C6 /* calendar.png */,
 				26FFE2AF1B25FDF2001789C6 /* comments.png */,
 				26FFE2B81B25FE60001789C6 /* news.png */,
 				26FFE2B11B25FDF2001789C6 /* ticket.png */,
+				26FFE2BA1B2634AF001789C6 /* reveal-icon.png */,
+				26FFE2BB1B2634AF001789C6 /* reveal-icon@2x.png */,
 			);
 			name = Icons;
 			path = ../Icons;
@@ -278,12 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FFE2B41B25FDF2001789C6 /* calendar.png in Resources */,
+				26FFE2BC1B2634AF001789C6 /* reveal-icon.png in Resources */,
 				26FFE2B91B25FE60001789C6 /* news.png in Resources */,
 				26CBAFD91B2501C8006D5D3B /* Main.storyboard in Resources */,
 				26FFE2AA1B251655001789C6 /* Treehouse@2x.png in Resources */,
 				26FFE2B31B25FDF2001789C6 /* book.png in Resources */,
 				26FFE2B21B25FDF2001789C6 /* bag.png in Resources */,
 				26FFE2B51B25FDF2001789C6 /* comments.png in Resources */,
+				26FFE2BD1B2634AF001789C6 /* reveal-icon@2x.png in Resources */,
 				26CBAFDE1B2501C8006D5D3B /* LaunchScreen.xib in Resources */,
 				26CBAFDB1B2501C8006D5D3B /* Images.xcassets in Resources */,
 				26FFE2B71B25FDF2001789C6 /* ticket.png in Resources */,

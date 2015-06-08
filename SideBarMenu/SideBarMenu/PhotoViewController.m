@@ -19,13 +19,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/2)];
+    imageView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:imageView];
     
     // retrive the reveal View Controller
     SWRevealViewController *revealVC = self.revealViewController;
     
     // create the sidebar button
-    UIBarButtonItem *sideBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:revealVC action:@selector(revealToggle:)];
+    UIBarButtonItem *sideBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon"] style:UIBarButtonItemStyleDone target:revealVC action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = sideBarButton;
     
     if (revealVC) {

@@ -26,7 +26,7 @@
     SWRevealViewController *revealVC = self.revealViewController;
     
     // create the sidebar button
-    UIBarButtonItem *sideBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:revealVC action:@selector(revealToggle:)];
+    UIBarButtonItem *sideBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon"] style:UIBarButtonItemStyleDone target:revealVC action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = sideBarButton;
     
     if (revealVC) {
