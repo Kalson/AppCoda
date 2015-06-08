@@ -7,6 +7,11 @@
 //
 
 #import "MenuViewController.h"
+#import "SWRevealViewController.h"
+#import "MainViewController.h"
+#import "MapViewController.h"
+#import "PhotoViewController.h"
+
 
 @interface MenuViewController ()
 
@@ -14,8 +19,12 @@
 
 @implementation MenuViewController
 {
-    NSArray *menuCellNames;
-    NSArray *menuCellImages;
+    NSArray *menuItems;
+    NSArray *menuImages;
+    
+    MainViewController *mainVC;
+    MapViewController *mapVC;
+    PhotoViewController *photoVC;
 
 }
 
@@ -28,8 +37,13 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    menuCellNames = @[@"APPCODA",@"News",@"Comments",@"Map",@"Calendar",@"Wishlist",@"Bookmark",@"Tag"];
-    menuCellImages = @[@"",@"news",@"comments",@"Treehouse",@"calendar",@"bag",@"book",@"ticket"];
+    menuItems = @[@"APPCODA",@"News",@"Comments",@"Map",@"Calendar",@"Wishlist",@"Bookmark",@"Tag"];
+    menuImages = @[@"",@"news",@"comments",@"Treehouse",@"calendar",@"bag",@"book",@"ticket"];
+    
+    mainVC = [MainViewController new];
+    mapVC = [MapViewController new];
+    photoVC = [PhotoViewController new];
+
     
 }
 
@@ -47,7 +61,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 8;
+    return menuItems.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -61,11 +75,45 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = menuCellNames[indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:menuCellImages[indexPath.row]];
+    cell.textLabel.text = menuItems[indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:menuImages[indexPath.row]];
     
 
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    // retrive the reveal View Controller
+    SWRevealViewController *revealVC = self.revealViewController;
+    
+    // selecting row
+    NSInteger row = indexPath.row;
+    
+    UIViewController *mainViewC;
+    
+    if (row == 0)
+    {
+        mainViewC = mainVC;
+
+    }
+    
+    else if (row == 3)
+    {
+        mainViewC = mapVC;
+    }
+    
+    else if (row == 6)
+    {
+        mainViewC = photoVC;
+
+    }
+    
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:mainViewC];
+    [revealVC pushFrontViewController:navC animated:YES];
+    
 }
 
 
