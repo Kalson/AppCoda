@@ -43,6 +43,9 @@
     mainVC = [MainViewController new];
     mapVC = [MapViewController new];
     photoVC = [PhotoViewController new];
+    
+    
+    [self.tableView reloadData];
 
     
 }
@@ -115,6 +118,9 @@
     UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:mainViewC];
     navC.title = menuItems[indexPath.row];
     [revealVC pushFrontViewController:navC animated:YES];
+    
+    // fixes the view from being framed by nav bar
+    navC.navigationBar.translucent = NO;
     
 }
 

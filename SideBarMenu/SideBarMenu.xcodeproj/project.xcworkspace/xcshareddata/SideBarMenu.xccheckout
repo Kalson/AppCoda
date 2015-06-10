@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0C6DA65C-781E-48D3-930A-AED8C47B4763</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SideBarMenu</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E09D2F8E553F0EE2D9FE4D269D501C6E07BE8490</key>
 		<string>https://github.com/Kalson/AppCoda.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SideBarMenu/SideBarMenu.xcodeproj</string>
+	<string>SideBarMenu/SideBarMenu.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E09D2F8E553F0EE2D9FE4D269D501C6E07BE8490</key>

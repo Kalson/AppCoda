@@ -30,6 +30,9 @@
     
     UINavigationController *mainViewNavC = [[UINavigationController alloc] initWithRootViewController:frontVC];
     
+    // fixes the view from being framed by nav bar
+    mainViewNavC.navigationBar.translucent = NO;
+    
     SWRevealViewController *revealVC = [[SWRevealViewController alloc]initWithRearViewController:rearVC frontViewController:mainViewNavC];
 
     
