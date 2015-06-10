@@ -108,10 +108,12 @@
     else 
     {
         mainViewC = photoVC;
+        photoVC.imageView.image = [UIImage imageNamed:menuImages[indexPath.row]];
 
     }
     
     UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:mainViewC];
+    navC.title = menuItems[indexPath.row];
     [revealVC pushFrontViewController:navC animated:YES];
     
 }

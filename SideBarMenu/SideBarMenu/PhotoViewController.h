@@ -10,4 +10,6 @@
 
 @interface PhotoViewController : UIViewController
 
+@property (nonatomic) UIImageView *imageView;
+
 @end

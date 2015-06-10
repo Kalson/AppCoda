@@ -21,9 +21,9 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/2)];
-    imageView.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:imageView];
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, (self.view.bounds.size.height/2) + 100)];
+//    imageView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:self.imageView];
     
     // retrive the reveal View Controller
     SWRevealViewController *revealVC = self.revealViewController;
