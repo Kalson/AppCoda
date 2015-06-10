@@ -112,6 +112,9 @@
     {
         mainViewC = photoVC;
         photoVC.imageView.image = [UIImage imageNamed:menuImages[indexPath.row]];
+//        [self.tableView reloadData];
+        
+        NSLog(@"%@",photoVC.imageView.image);
 
     }
     
