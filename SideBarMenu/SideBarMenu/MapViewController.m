@@ -20,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.title = @"Maps";
+    
     // create map View object
     MKMapView *mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:mapView];

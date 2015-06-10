@@ -96,7 +96,7 @@
 				26CBAFCC1B2501C8006D5D3B /* SideBarMenu */,
 				26CBAFF61B250201006D5D3B /* SWRevealViewController */,
 				26CBAFFD1B250B6E006D5D3B /* MainViewControllers (Front View) */,
-				26CBAFFE1B250B8A006D5D3B /* MenuViewController (Rear View) */,
+				26CBAFFE1B250B8A006D5D3B /* MenuTVC (Rear View) */,
 				26CBAFCD1B2501C8006D5D3B /* Supporting Files */,
 				26CBAFE61B2501C8006D5D3B /* SideBarMenuTests */,
 				26CBAFCB1B2501C8006D5D3B /* Products */,
@@ -176,13 +176,13 @@
 			path = SideBarMenu;
 			sourceTree = "<group>";
 		};
-		26CBAFFE1B250B8A006D5D3B /* MenuViewController (Rear View) */ = {
+		26CBAFFE1B250B8A006D5D3B /* MenuTVC (Rear View) */ = {
 			isa = PBXGroup;
 			children = (
 				26CBAFF71B25051A006D5D3B /* MenuViewController.h */,
 				26CBAFF81B25051A006D5D3B /* MenuViewController.m */,
 			);
-			name = "MenuViewController (Rear View)";
+			name = "MenuTVC (Rear View)";
 			path = SideBarMenu;
 			sourceTree = "<group>";
 		};

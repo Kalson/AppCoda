@@ -89,7 +89,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    // retrive the reveal View Controller
+    // retrieve the reveal View Controller
     SWRevealViewController *revealVC = self.revealViewController;
     
     // selecting row
@@ -111,15 +111,12 @@
     else 
     {
         mainViewC = photoVC;
-        photoVC.imageView.image = [UIImage imageNamed:menuImages[indexPath.row]];
-//        [self.tableView reloadData];
-        
-        NSLog(@"%@",photoVC.imageView.image);
+        photoVC.imageNameString = menuImages[indexPath.row];
+        photoVC.titleNameString = menuItems[indexPath.row];
 
     }
     
     UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:mainViewC];
-    navC.title = menuItems[indexPath.row];
     [revealVC pushFrontViewController:navC animated:YES];
     
     // fixes the view from being framed by nav bar

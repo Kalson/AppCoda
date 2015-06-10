@@ -21,9 +21,14 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/2)];
+    
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/2)];
 //    imageView.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:self.imageView];
+    imageView.image = [UIImage imageNamed:self.imageNameString];
+    [self.view addSubview:imageView];
+    
+    
     
     // retrive the reveal View Controller
     SWRevealViewController *revealVC = self.revealViewController;
@@ -36,6 +41,13 @@
         // lets you slide the main/content view to the left/right
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.title = self.titleNameString;
 }
 
 - (void)didReceiveMemoryWarning {
