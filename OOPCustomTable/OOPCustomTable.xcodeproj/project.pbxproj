@@ -200,10 +200,7 @@
 				26389C251B1DA3F7007125A3 /* Model */,
 				266193811B1E572E004C3D82 /* View */,
 				266193821B1E5737004C3D82 /* Controller */,
-				26389C031B1DA1B7007125A3 /* Main.storyboard */,
-				26389C061B1DA1B7007125A3 /* Images.xcassets */,
 				26389C261B1DA5B0007125A3 /* simpletable_image_pack */,
-				26389C081B1DA1B7007125A3 /* LaunchScreen.xib */,
 				26389BF91B1DA1B7007125A3 /* Supporting Files */,
 			);
 			path = OOPCustomTable;
@@ -212,6 +209,9 @@
 		26389BF91B1DA1B7007125A3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26389C031B1DA1B7007125A3 /* Main.storyboard */,
+				26389C081B1DA1B7007125A3 /* LaunchScreen.xib */,
+				26389C061B1DA1B7007125A3 /* Images.xcassets */,
 				266193861B1E9892004C3D82 /* about.jpg */,
 				266193871B1E9892004C3D82 /* about.html */,
 				26389BFA1B1DA1B7007125A3 /* Info.plist */,
