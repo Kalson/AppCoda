@@ -164,6 +164,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2600FFB81B3373A1005C7F69 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				261220A31B1D1E35001D7CC3 /* TableViewCell.h */,
+				261220A41B1D1E35001D7CC3 /* TableViewCell.m */,
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
 		261220401B1D1B85001D7CC3 /* simpletable_image_pack */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,11 +253,9 @@
 				262F967C1B1A7CDE0084807B /* AppDelegate.h */,
 				262F967D1B1A7CDE0084807B /* AppDelegate.m */,
 				262F96A21B1A7F740084807B /* Model */,
-				262F96A11B1A7F620084807B /* New Group */,
-				262F96821B1A7CDE0084807B /* Main.storyboard */,
-				262F96851B1A7CDE0084807B /* Images.xcassets */,
+				2600FFB81B3373A1005C7F69 /* VIew */,
+				262F96A11B1A7F620084807B /* Controller */,
 				261220401B1D1B85001D7CC3 /* simpletable_image_pack */,
-				262F96871B1A7CDE0084807B /* LaunchScreen.xib */,
 				262F96781B1A7CDE0084807B /* Supporting Files */,
 			);
 			path = OOPSimpleTable;
@@ -257,6 +264,9 @@
 		262F96781B1A7CDE0084807B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				262F96871B1A7CDE0084807B /* LaunchScreen.xib */,
+				262F96821B1A7CDE0084807B /* Main.storyboard */,
+				262F96851B1A7CDE0084807B /* Images.xcassets */,
 				262F96791B1A7CDE0084807B /* Info.plist */,
 				262F967A1B1A7CDE0084807B /* main.m */,
 			);
@@ -280,15 +290,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		262F96A11B1A7F620084807B /* New Group */ = {
+		262F96A11B1A7F620084807B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				261220A61B1D1FE3001D7CC3 /* TableViewController.h */,
 				261220A71B1D1FE3001D7CC3 /* TableViewController.m */,
-				261220A31B1D1E35001D7CC3 /* TableViewCell.h */,
-				261220A41B1D1E35001D7CC3 /* TableViewCell.m */,
 			);
-			name = "New Group";
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		262F96A21B1A7F740084807B /* Model */ = {
