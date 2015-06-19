@@ -101,13 +101,13 @@
     
     Recipes *recipe12 = [Recipes new];
     recipe12.name = @"Japanese Noodle with Pork";
-    recipe12.prepTime = @"20 min";
+    recipe12.prepTime = @"20 mins";
     recipe12.image = @"japanese_noodle_with_pork.jpg";
     recipe12.ingredients = @[@"1 pack of Japanese Noodle", @"2 green onions", @"2 garlic cloves, minced", @"4 boneless pork loin chops"];
     
     Recipes *recipe13 = [Recipes new];
     recipe13.name = @"Green Tea";
-    recipe13.prepTime = @"5 min";
+    recipe13.prepTime = @"5 mins";
     recipe13.image = @"green_tea.jpg";
     recipe13.ingredients = @[@"Green tea"];
 
